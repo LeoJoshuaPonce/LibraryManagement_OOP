@@ -92,12 +92,13 @@ namespace LibraryManagement_OOP
 
             if (!borrowers.Any(b => b._Id == id))
             {
-                Console.WriteLine("walang ganyan na tao");
+                Console.WriteLine("walang ganyan na tao teh");
                 return;
             }
 
             borrower._HasBorrowed = false;
             book._IsAvailable = true;
+            Console.WriteLine($"ibinalik mo ang {book._Title} by {book._Author} salamat {borrower._Name}");
         }
         public void DisplayBooks()
         {

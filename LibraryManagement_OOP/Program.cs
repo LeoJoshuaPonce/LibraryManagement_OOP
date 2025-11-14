@@ -22,7 +22,7 @@ namespace LibraryManagement_OOP
             library.BorrowBook("1234567890\n", 1); //walang ganyan na libro
             library.BorrowBook("9780451524935", 2); //nahiram na to a
             library.BorrowBook("9780743273565", 1); //pwede ka lang manghiram ng isang libro
-            library.Retur
+            library.ReturnBook("9780451524935", 1); //ibinalik ni leo ang 1984
             //library.RemoveBook("9780451524935");
             //library.DisplayBooks();
         }
