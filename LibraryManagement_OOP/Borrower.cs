@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement_OOP
 {
-    internal class Borrower
+    /// <summary>
+    /// Represents a borrower with an identifier, name, and borrowing status.
+    /// </summary>
+    /// <remarks>This class is used to track the borrowing status of an individual.  It includes properties
+    /// for the borrower's ID, name, and whether they have borrowed an item.</remarks>
+    class Borrower
     {
         public int _Id { get; set; }
         public string _Name { get; set; }

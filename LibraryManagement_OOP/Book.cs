@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement_OOP
 {
+    /// <summary>
+    /// Represents a book with a title, author, and ISBN.
+    /// </summary>
+    /// <remarks>This class provides basic information about a book, including its availability
+    /// status.</remarks>
     public class Book
     {
         public string _Title { get; set; }

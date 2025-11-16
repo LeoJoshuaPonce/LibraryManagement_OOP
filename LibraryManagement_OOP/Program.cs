@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement_OOP
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
             Library library = new Library();
             Book book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", "9780743273565");
             Book book2 = new Book("1984", "George Orwell", "9780451524935");
+            Book book3 = new Book("The Great Gatsby", "F. Scott Fitzgerald", "12345678");
 
             library.AddBook(book1);
             library.AddBook(book2);
@@ -24,7 +25,10 @@ namespace LibraryManagement_OOP
             library.BorrowBook("9780743273565", 1); //pwede ka lang manghiram ng isang libro
             library.ReturnBook("9780451524935", 1); //ibinalik ni leo ang 1984
             //library.RemoveBook("9780451524935");
-            //library.DisplayBooks();
+            library.DisplayBooks();
+            Console.Write("Search Book: ");
+            string title = Console.ReadLine();
+            library.SearchBooks(title);
         }
     }
 }
